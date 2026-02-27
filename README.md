@@ -9,60 +9,99 @@ We don't believe in forcing it on other developers, but it is a duty in our team
 - When naming variables or constants, ALWAYS use Camelcase. Avoid SCREAMING CASE AT ALL COST. YOU DON'T LIKE THIS. DO YOU? Snakecase also adds visual clutter.
 
 Good:
-```diff
-+ const brokeBack: boolean;
+```ts
+const brokeBack: boolean;
 ```
 Bad:
-```diff
-- const BrokeBack: boolean;
+```ts
+const BrokeBack: boolean;
+```
+
+## Classes
+
+- When creating classes, always give classes PascalCase.
+
+Good
+```ts
+class Good {}
+
+const good: Good = new Good();
+```
+Bad:
+```ts
+class bad {}
+
+const bad: bad = new bad();
+```
+- When naming fields, always give them PascalCase.
+
+Good:
+```ts
+class Good {
+  public Good: boolean = true;
+
+  constructor() {
+    if ( good ) { print(":\)"); }
+  }
+}
+```
+Bad:
+```ts
+class bad {
+  public bad: boolean = true;
+
+  constructor() {
+    if ( bad ) { print(">:\("); }
+  }
+}
 ```
 
 ## Functions
 - When calling functions with three or more arguments, you should write them on separate lines.
 
 Good:
-```diff
-+ print(
-+   "Apple",
-+   "Banana",
-+   "Orange"
-+ );
+```ts
+print(
+  "Apple",
+  "Banana",
+  "Orange"
+);
 ```
 Bad:
-```diff
-+ print("Apple", "Banana", "Orange");
+```ts
+print("Apple", "Banana", "Orange");
 ```
 - When writing callbacks, keep them on (a) separate line(s).
 
 Good:
-```diff
-+ Connect(
-+   () => {
-+     print("Good.");
-+   }
-+ );
+```ts
+Connect(
+  () => {
+    print("Good.");
+  }
+);
 ```
 Bad:
-```diff
-- Connect(() => {
--   print("Bad.");
-- });
+```ts
+Connect(() => {
+  print("Bad.");
+});
 ```
 ---
 - When writing functions, write it like you're writing a function in C by giving the brackets their own lines.
 
 Good:
-```diff
-+ function add(a : number, b : number)
-+ {
-+   return a + b;
-+ }
+```ts
+function add(a : number, b : number)
+{
+  return a + b;
+}
 ```
 Bad:
-```diff
-- function add(a : number, b : number) {
--   return a + b;
-- }
+```ts
+function add(a : number, b : number) {
+  return a + b;
+}
 ```
 
 ## Mindset
