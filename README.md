@@ -17,7 +17,6 @@ Bad:
 ```
 
 ## Functions
-
 - When calling functions with three or more arguments, you should write them on separate lines.
 Good:
 ```diff
@@ -45,6 +44,21 @@ Bad:
 - Connect(() => {
 -   print("Bad.");
 - });
+```
+---
+- When writing functions, write it like you're writing a function in C by giving the brackets their own lines.
+Good:
+```diff
++ function add(a : number, b : number)
++ {
++   return a + b;
++ }
+```
+Bad:
+```diff
+- function add(a : number, b : number) {
+-   return a + b;
+- }
 ```
 
 ## Mindset
