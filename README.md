@@ -7,6 +7,7 @@ We don't believe in forcing it on other developers, but it is a duty in our team
 
 ## Variables and Constants
 - When naming variables or constants, ALWAYS use Camelcase. Avoid SCREAMING CASE AT ALL COST. YOU DON'T LIKE THIS. DO YOU? Snakecase also adds visual clutter.
+
 Good:
 ```diff
 + const brokeBack: boolean;
@@ -18,6 +19,7 @@ Bad:
 
 ## Functions
 - When calling functions with three or more arguments, you should write them on separate lines.
+
 Good:
 ```diff
 + print(
@@ -31,6 +33,7 @@ Bad:
 + print("Apple", "Banana", "Orange");
 ```
 - When writing callbacks, keep them on (a) separate line(s).
+
 Good:
 ```diff
 + Connect(
@@ -47,6 +50,7 @@ Bad:
 ```
 ---
 - When writing functions, write it like you're writing a function in C by giving the brackets their own lines.
+
 Good:
 ```diff
 + function add(a : number, b : number)
