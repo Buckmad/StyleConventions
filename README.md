@@ -21,7 +21,7 @@ const BrokeBack: boolean;
 
 - When creating classes, always give classes PascalCase.
 
-Good
+Good:
 ```ts
 class Good {}
 
