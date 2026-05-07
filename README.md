@@ -37,10 +37,12 @@ const bad: bad = new bad();
 
 Good:
 ```ts
-class Good {
+class Good
+{
   public Good: boolean = true;
 
-  constructor() {
+  constructor()
+  {
     if ( good ) { print(":\)"); }
   }
 }
@@ -53,6 +55,21 @@ class bad {
   constructor() {
     if ( bad ) { print(">:\("); }
   }
+}
+```
+- When writing classes, write it like you're writing a class in Allman indentations by giving the brackets their own lines.
+
+Good:
+```ts
+class Good
+{
+  public Good: boolean = true;
+}
+```
+Bad:
+```ts
+class bad {
+  public bad: boolean = true;
 }
 ```
 
@@ -88,7 +105,7 @@ Connect(() => {
 });
 ```
 ---
-- When writing functions, write it like you're writing a function in C by giving the brackets their own lines.
+- When writing functions, write it like you're writing a function in Allman indentations by giving the brackets their own lines.
 
 Good:
 ```ts
